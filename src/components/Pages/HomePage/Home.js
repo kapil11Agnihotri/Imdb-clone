@@ -1,5 +1,5 @@
 import "./Home.css";
-import { useEffect, useState } from "react";
+import { useEffect, useState} from "react";
 import axios from "axios";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import MovieList from "../../../MovieList/MovieList";
 
 const Home = () => {
+  
   const [populerMovieData, setPopulerMovieData] = useState([]);
   useEffect(() => {
     (async () => {
